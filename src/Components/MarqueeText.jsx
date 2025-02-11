@@ -5,7 +5,7 @@ const MarqueeText = () => {
   return (
     <div className="flex items-center gap-3 bg-base-200 p-3 my-4">
       <button className="btn btn-secondary">Latest</button>
-      <Marquee pauseOnHover={true}>
+      <Marquee pauseOnHover={true} speed={100}>
         <div className="space-x-10">
         <Link>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
