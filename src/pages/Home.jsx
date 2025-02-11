@@ -3,6 +3,8 @@ import Header from "../Components/Header";
 import NavBar from "../Components/NavBar";
 import Login from "../Components/Login";
 import Categories from "../Components/Categories";
+import { Outlet } from "react-router-dom";
+import SocialLogin from "../Components/SocialLogin";
 
 const Home = () => {
   return (
@@ -19,9 +21,18 @@ const Home = () => {
       </header>
       {/* main */}
       <main className="grid md:grid-cols-12 gap-5 my-20">
-        <div className="col-span-3"><Categories/></div>
-        <div className="col-span-6">Dragon News Home</div>
-        <div className="col-span-3">Login With</div>
+        <div className="col-span-3 space-y-5">
+        <h2 className="font-bold text-xl">All Caterogy</h2>
+          <Categories/>
+          </div>
+        <div className="col-span-6 space-y-5">
+        <h2 className="font-bold text-xl">Dragon News Home</h2>
+          <Outlet/>
+          </div>
+        <div className="col-span-3 space-y-5">
+          <h2 className="font-bold text-xl">Login With</h2>
+          <SocialLogin/>
+          </div>
       </main>
     </div>
   );

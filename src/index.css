@@ -4,3 +4,8 @@
 #navbar a.active{
     text-decoration: underline;
 }
+
+#category a.active{
+    background-color: #E7E7E7;
+    font-weight: 700;
+}

@@ -9,10 +9,8 @@ const Categories = () => {
       .then((data) => setNewsCategories(data.data.news_category));
   }, []);
 
-  console.log(newsCategories);
   return (
     <div className="">
-      <h2>All Caterogy</h2>
       <div className="mt-5">
         {newsCategories.map((newsCategory) => (
           <CategoryButton
